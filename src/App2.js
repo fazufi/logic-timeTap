@@ -25,7 +25,7 @@ export default class App2 extends Component {
   };
   render() {
     const { time } = this.state;
-    console.log("\n");
+    console.log("STATE", time);
     const jumlahpanel = 6;
     let perenam = [];
     let persatu = [];
@@ -39,7 +39,7 @@ export default class App2 extends Component {
         persatu.push(t);
       }
     }
-    console.log(persatu.length, persatu);
+    // console.log(persatu.length, persatu);
     return (
       <div className="container">
         <button onClick={(e) => this.add()}>Add</button>
